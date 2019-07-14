@@ -107,8 +107,6 @@ const ContactPage = () => (
                   id="contact-form-submit-button"
                   className="button is-outlined is-full-width"
                   type="submit"
-                  value="Send Message"
-                  name="submitButton"
                 >
                   Send Message
                 </button>
