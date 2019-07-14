@@ -9,18 +9,17 @@ const ContactPage = () => (
         <div className="column is-6">
           <div id="form-card" className="card is-shadowless">
             <header className="card-header is-shadowless">
-              <p className="card-header-title is-centered is-size-2 has-text-teal">
+              <p className="card-header-title is-centered is-size-3 has-text-teal">
                 Lets Get in Touch!
               </p>
             </header>
             <div id="contact-form-content" className="card-content">
               <form name="contactMe" method="POST" data-netlify="true">
+              <div className="field is-horizontal">
+              <div className="field-body">
+              <div className="field">
+              <p className=" is-expanded has-icons-left">
               <input type="hidden" name="form-name" value="contactMe" />
-                <div className="field is-horizontal">
-                  <div className="field-body">
-                    <div className="field">
-                      <p className=" is-expanded has-icons-left">
-                        <label>Your Name: </label>
                         <input
                           className="input"
                           type="text"
@@ -46,7 +45,6 @@ const ContactPage = () => (
                 </div>
                 <div className="field">
                   <p className=" is-expanded has-icons-left has-icons-right">
-
                     <input
                       className="input"
                       type="phone"
@@ -54,9 +52,6 @@ const ContactPage = () => (
                       id="phoneNumber"
                       placeholder="Phone"
                     />
-                    <span className="icon is-small is-left">
-                      <FontAwesomeIcon icon="phone" size="sm" />
-                    </span>
                   </p>
                 </div>
                 <div className="field">
@@ -68,9 +63,6 @@ const ContactPage = () => (
                       id="emailAddress"
                       placeholder="Email"
                     />
-                    <span className="icon is-small is-left">
-                      <FontAwesomeIcon icon="envelope" size="sm" />
-                    </span>
                   </p>
                 </div>
                 <div className="field">
@@ -82,9 +74,6 @@ const ContactPage = () => (
                       id="messageSubject"
                       placeholder="Subject"
                     />
-                    <span className="icon is-small is-left">
-                      <FontAwesomeIcon icon="question-circle" size="sm" />
-                    </span>
                   </p>
                 </div>
                 <div className="field">
@@ -95,7 +84,7 @@ const ContactPage = () => (
                       rows="5"
                       name="sentMessage"
                       id="sentMessage"
-                      placeholder="Send me a note!"
+                      placeholder="Drop Me a Line!"
                     />
                   </p>
                 </div>
@@ -103,8 +92,6 @@ const ContactPage = () => (
                   id="contact-form-submit-button"
                   className="button is-outlined is-full-width"
                   type="submit"
-                  
-                  
                 >
                   Send Message
                 </button>
@@ -112,13 +99,12 @@ const ContactPage = () => (
             </div>
           </div>
         </div>
-        
         <div className="column is-6">
           <div className="card" id="contact-info">
             <div className="card-header is-shadowless">
             <br/>
             <br/>
-              <p className="card-header-title is-centered is-size-2">
+              <p className="card-header-title is-centered is-size-3">
                 Contact Me
               </p>
               <br />
@@ -134,7 +120,7 @@ const ContactPage = () => (
                 </div>
                 <br/>
                 <div className = "emailAddy">
-                <FontAwesomeIcon icon ="map-marker-alt" size="2x"/><span id="myEmail">blnicholson13@gmail.com</span>
+                <FontAwesomeIcon icon ="envelope" size="2x"/><span id="myEmail">blnicholson13@gmail.com</span>
                 </div>
                 <hr/>
                 <ul id="social">
