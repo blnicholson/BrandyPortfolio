@@ -19,7 +19,7 @@ const ContactPage = () => (
                 <div className="field is-horizontal">
                   <div className="field-body">
                     <div className="field">
-                      <p className="control is-expanded has-icons-left">
+                      <p className=" is-expanded has-icons-left">
                         <label>Your Name: </label>
                         <input
                           className="input"
@@ -32,8 +32,7 @@ const ContactPage = () => (
                       </p>
                     </div>
                     <div className="field">
-                      <p className="control is-expanded has-icons-left has-icons-right">
-                      <label>Your Last Name: </label>
+                      <p className=" is-expanded has-icons-left has-icons-right">
                         <input
                           className="input"
                           type="text"
@@ -46,8 +45,7 @@ const ContactPage = () => (
                   </div>
                 </div>
                 <div className="field">
-                  <p className="control is-expanded has-icons-left has-icons-right">
-                  <label>Your Name: </label>
+                  <p className=" is-expanded has-icons-left has-icons-right">
 
                     <input
                       className="input"
@@ -62,7 +60,7 @@ const ContactPage = () => (
                   </p>
                 </div>
                 <div className="field">
-                  <p className="control is-expanded has-icons-left has-icons-right">
+                  <p className=" is-expanded has-icons-left has-icons-right">
                     <input
                       className="input"
                       type="email"
@@ -76,7 +74,7 @@ const ContactPage = () => (
                   </p>
                 </div>
                 <div className="field">
-                  <p className="control is-expanded has-icons-left has-icons-right">
+                  <p className=" is-expanded has-icons-left has-icons-right">
                     <input
                       className="input"
                       type="text"
@@ -90,7 +88,7 @@ const ContactPage = () => (
                   </p>
                 </div>
                 <div className="field">
-                  <p className="control">
+                  <p >
                     <textarea
                       id="contactText"
                       className="textarea"
@@ -105,8 +103,7 @@ const ContactPage = () => (
                   id="contact-form-submit-button"
                   className="button is-outlined is-full-width"
                   type="submit"
-                  value="Send Message"
-                  name="submitButton"
+                  
                   
                 >
                   Send Message
