@@ -29,7 +29,7 @@ const ContactPage = () => (
                         <span className="icon is-small is-left">
                           <FontAwesomeIcon icon="user" size="sm" />
                         </span>
-                      </p>
+                      
                     </div>
                     <div className="field">
                       <p className="control is-expanded has-icons-left has-icons-right">
