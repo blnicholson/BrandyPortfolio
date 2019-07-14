@@ -18,8 +18,6 @@ const ContactPage = () => (
                 <div className="field is-horizontal">
                   <div className="field-body">
                     <div className="field">
-                      <p className="control is-expanded has-icons-left">
-                        <input type="hidden" />
                         <input type="hidden" name="form-name" value="contact" />
                         <input
                           className="input"
