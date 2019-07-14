@@ -14,7 +14,8 @@ const ContactPageTwo= () => (
                 </p>
               </header>
               <div className = "card-content" id = "contact-form-content">
-                <form name = "contactme" method = "POST" data-netlify = "true">
+                <form name = "contactMe" method = "POST" data-netlify = "true">
+                <input type = "hidden" name = "form-name" value = "contactMe"/>
                     <input className = "input" type = "text" name = "firstName" placeholder = "First Name"/>
                     <button className = "button">Submit</button>
                 </form>
