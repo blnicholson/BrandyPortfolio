@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import ContactPage from "../components/contact-page.js";
+import ContactPageTwo from "../components/contact2.js";
 import "./contact.css";
 import { encode } from 'punycode';
 
@@ -8,7 +8,7 @@ class Contact extends Component {
     render(){
         return(
             <div id ="contact-bg">
-    <ContactPage
+    <ContactPageTwo
             
     />
     </div>
