@@ -11,7 +11,7 @@ constructor(props){
 
 handleContactSubmit = event => {
     event.preventDefault();
-    const form = e.target;
+    const form = event.target;
     fetch("/", {
         method:"POST",
         body: {...this.state}
