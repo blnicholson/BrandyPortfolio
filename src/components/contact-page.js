@@ -2,7 +2,7 @@ import React from 'react'
 import './contact-page.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const ContactPage = (props) => (
+const ContactPage = () => (
   <div className="hero is-large" id="contactHero">
     <div className="container" id="contactContainer">
       <div className="columns">
@@ -14,8 +14,8 @@ const ContactPage = (props) => (
               </p>
             </header>
             <div id="contact-form-content" className="card-content">
-              <form name="contactMe" method="POST" data-netlify="true" onSubmit= {() => props.handleContactSubmit}>
-              <input type="hidden" name="form-name" value="contact" />
+              <form name="contactMe" method="POST" data-netlify="true">
+              <input type="hidden" name="form-name" value="contactMe" />
                 <div className="field is-horizontal">
                   <div className="field-body">
                     <div className="field">
@@ -108,6 +108,7 @@ const ContactPage = (props) => (
                   type="submit"
                   value="Send Message"
                   name="submitButton"
+                  
                 >
                   Send Message
                 </button>

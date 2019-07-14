@@ -4,26 +4,12 @@ import "./contact.css";
 import { encode } from 'punycode';
 
 class Contact extends Component {
-constructor(props){
-    super(props);
-    this.state = {};
-}
 
-handleContactSubmit = event => {
-    event.preventDefault();
-    const form = event.target;
-    fetch("/", {
-        method:"POST",
-        body: {...this.state}
-    })
-    .then(() => alert("thank you!"))
-    .catch(error => alert(error));
-}
     render(){
         return(
             <div id ="contact-bg">
     <ContactPage
-            handleContactSubmit={this.handleContactSubmit}
+            
     />
     </div>
         )
