@@ -14,7 +14,7 @@ const ContactPage = () => (
               </p>
             </header>
             <div id="contact-form-content" className="card-content">
-              <form>
+              <form name="contactMe" method="POST" data-netlify="true">
                 <div className="field is-horizontal">
                   <div className="field-body">
                     <div className="field">
