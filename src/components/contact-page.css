@@ -1,0 +1,31 @@
+#form-card {
+    height: 65vh;
+    background-color:transparent;
+    margin-top:10%;
+}
+#contact-info{
+    height: 65vh;
+    margin-top:10%;
+}
+#social{
+    text-align:center;
+}
+#social li{
+    display: inline;
+    padding:3%;
+}
+#myLocation{
+   padding:40%;
+}
+#myNumber{
+    padding:39%;
+}
+#myEmail{
+    padding:29%;
+}
+#contact-info{
+    background-color:transparent;
+    
+}
+
+

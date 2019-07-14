@@ -1,5 +1,6 @@
 @charset "utf-8";
 @import '~bulma';
+@import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light");
 
 //- Full Page Height
 #___gatsby {
@@ -11,4 +12,118 @@
   .site-content {
     flex: 1;
   }
+  .is-child{
+    border:solid;
+    box-shadow:5px 5px gray;
+    background-color:rgba(0, 0, 0, 0.241);
+  }
+
+  
+  #index-bg{
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
 }
+
+#nameTitle{
+  font-family:"Rakkas";
+  font-size:10vmin;
+  font-weight:500;
+  letter-spacing:50px;
+  text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+}
+.name{
+  position: absolute;
+  top:50%;
+  left:60%;
+  transform:translate(-50%,-50%);
+  color:#BD4CA8;
+  
+}
+
+#map{
+  position: absolute;
+  right: 15%;
+  top: 1%;
+  transform:translate(-50%, -50%);
+}
+.navbar-item img {
+  max-height:7rem;
+  
+}
+a{
+  text-decoration: none;
+  color:#50CFDE;
+}
+.hero{
+  width:90vw;
+  height:80vh;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  border:solid black 5px;
+  border-radius:15px;
+  box-shadow:0 10px 10px -5px;
+  
+}
+  
+
+  
+
+  
+.icon{
+  margin-bottom:60px;
+  color:black;
+}
+  .sideIcons{
+    position: absolute;
+    left:85%;
+    top:30%;
+  }
+  .navbar-item{
+    color:#50CFDE;
+  }
+  .rightArrow{
+    color:#50CFDE;
+    position: absolute;
+    left:90%;
+    top:90%;
+  }
+  .fa-arrow-alt-circle-right{
+    margin-left:35px;
+    color:#50CFDE;
+  }
+  
+  
+}
+
+
+.half {
+ float: left;
+ width: 48%;
+ margin-bottom: 1em;
+}
+
+.right { width: 50%; }
+
+.left {
+    margin-right: 2%; 
+}
+
+
+@media (max-width: 480px) {
+ .half {
+    width: 100%; 
+    float: none;
+    margin-bottom: 0; 
+ }
+}
+
+
+
+  
+
+
