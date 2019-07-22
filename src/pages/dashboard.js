@@ -1,33 +1,15 @@
-import React from 'react'
-// import "./about.css";
+import React, { Component } from 'react'
+import DashboardLayout from '../components/dashboard.js'
+import './dashboard.css'
 
-import { Link } from 'gatsby'
-import Layout from '../components/layout'
-
-const DashBoardPage = () => (
-  <div className="page-one-bg">
-  <Layout>
-    <section className="hero is-primary header-hero ">
-      <div className="hero-body">
-        <div className="container">
-          <h1 className="title">Dashboard</h1>
-          <h2 className="subtitle">
-            <nav className="breadcrumb is-small" aria-label="breadcrumbs">
-              <ul>
-                <li>
-                  <Link to="/home">Home</Link>
-                </li>
-                <li className="is-active">
-                  <Link to="/page-2">Page 2</Link>
-                </li>
-              </ul>
-            </nav>
-          </h2>
-        </div>
+class Dashboard extends Component {
+  render() {
+    return (
+      <div id="dashboard-bg">
+        <DashboardLayout />
       </div>
-    </section>
-    </Layout>
-    </div>
-)
+    )
+  }
+}
 
-export default DashBoardPage
+export default Dashboard

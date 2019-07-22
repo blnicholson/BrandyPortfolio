@@ -45,7 +45,14 @@ module.exports = {
           name: "podcasts",
       },
   },
-
+  {
+    resolve: `gatsby-source-youtube-v2`,
+    options: {
+      channelId: [ 'UCW5YeuERMmlnqo4oq8vwUpg'],
+      apiKey: 'AIzaSyBwF32cih-lu4GxejN2pd7lBgqcG2aF3rU',
+      maxVideos: 50 // Defaults to 50
+    },
+  },
     'gatsby-plugin-sass',
     'gatsby-plugin-offline',
   ],

@@ -1,0 +1,21 @@
+#calendarCard{
+    font-size:15px;
+}
+
+#dashboard-card{
+    height:80vh;
+    background:transparent;
+    padding:2% 0 2%; 
+}
+
+#information-side{
+    height:68vh;
+}
+
+#farRight{
+   padding-right:2%
+}
+
+iframe{
+    height:300px;
+}
