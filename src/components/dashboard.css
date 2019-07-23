@@ -1,7 +1,11 @@
 #calendarCard{
     font-size:15px;
+    background:white;
+    height:46.4vh;
 }
-
+.rbc-toolbar {
+    margin-bottom:20px;
+}
 #dashboard-card{
     height:80vh;
     background:transparent;

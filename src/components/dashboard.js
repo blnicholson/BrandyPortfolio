@@ -1,17 +1,15 @@
 import React from 'react';
 import { Link, StaticQuery, graphql } from 'gatsby';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import FullCalendar from "@fullcalendar/react";
-import dayGridPlugin from "@fullcalendar/daygrid";
 import Date from "./date";
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext, ButtonFirst, ButtonLast } from 'pure-react-carousel';
-import 'pure-react-carousel/dist/react-carousel.es.css';
 import Player from './youtube.js';
 import WeatherDash from "./weatherDash";
+import Calendar from "./fullCalendarDash";
+import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext, ButtonFirst, ButtonLast } from 'pure-react-carousel';
+import 'pure-react-carousel/dist/react-carousel.es.css';
 
 import './dashboard.css';
-import "@fullcalendar/core/main.css";
-import "@fullcalendar/daygrid/main.css";
+
 
 
 
@@ -163,17 +161,7 @@ const DashboardLayout = () => (
             <div id="calendar-column" className="column">
               <div id="calendar-card">
                 <div className="card" id="calendarCard">
-                  <FullCalendar 
-                      defaultView ="dayGridMonth"
-                      header={{
-                        left:"prev",
-                        center:"title",
-                        right:"next"
-                      }}
-                      plugins={[dayGridPlugin]}
-                      contentHeight={350}
-                      showNonCurrentDates={true}
-                      />
+                  <Calendar/>
                       </div>
                 </div>
               </div>
