@@ -4,10 +4,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from "@fullcalendar/daygrid";
 import Date from "./date";
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
+import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext, ButtonFirst, ButtonLast } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
-import Player from './youtube';
-import './dashboard.css'
+import Player from './youtube.js';
+import WeatherDash from "./weatherDash";
+
+import './dashboard.css';
 import "@fullcalendar/core/main.css";
 import "@fullcalendar/daygrid/main.css";
 
@@ -142,8 +144,8 @@ const DashboardLayout = () => (
                             )}
                   
                 </Slider>
-                <ButtonBack>Back</ButtonBack>
-                <ButtonNext>Next</ButtonNext>
+                <ButtonBack>Last Video</ButtonBack>
+                <ButtonNext>Next Video</ButtonNext>
               </CarouselProvider>
                 
                 </div>
@@ -193,7 +195,7 @@ const DashboardLayout = () => (
           <div className="columns">
             <div className="column">
               <div className="card" id="weatherCard">
-                Weather
+                <WeatherDash/>
               </div>
             </div>
           </div>

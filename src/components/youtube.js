@@ -1,6 +1,7 @@
 import React from 'react';
 import YouTube from 'react-youtube';
  
+
 class Player extends React.Component {
     videoReady(event) {
       // access to player in all event handlers via event.target
