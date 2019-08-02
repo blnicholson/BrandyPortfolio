@@ -161,7 +161,7 @@ const DashboardLayout = () => (
             <div id="calendar-column" className="column">
               <div id="calendar-card">
                 <div className="card" id="calendarCard">
-                  <Calendar/>
+                  
                       </div>
                 </div>
               </div>
@@ -183,7 +183,7 @@ const DashboardLayout = () => (
           <div className="columns">
             <div className="column">
               <div className="card" id="weatherCard">
-                <WeatherDash/>
+                
               </div>
             </div>
           </div>

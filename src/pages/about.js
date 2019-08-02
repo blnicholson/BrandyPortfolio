@@ -1,8 +1,8 @@
 import React, {Component} from 'react'
 import "./about.css";
-
 import { Link } from 'gatsby'
 import Layout from '../components/layout'
+import Pagination from "../components/pagination"
 
 class AboutUsPage extends Component {
   
@@ -13,7 +13,7 @@ class AboutUsPage extends Component {
         <section className="hero is-primary header-hero ">
           <div className="hero-body">
             <div className="container">
-              <h1 className="title">My about page</h1>
+              <Pagination/>
             </div>
           </div>
         </section>

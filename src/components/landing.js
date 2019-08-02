@@ -35,28 +35,28 @@ const Landing = () => (
         </div>
         <div className = "sideIcons">
         <ul className = "sideMenu">
-          <li>
+          <li className= "sideIcon">
             <Link to ="/dashboard">
               <span class="icon">
                 <FontAwesomeIcon icon = "chart-line" size="2x"/>
               </span>
             </Link>
           </li>
-          <li>
+          <li className= "sideIcon">
             <Link to = "/about">
               <span class="icon">
                 <FontAwesomeIcon icon = "portrait" size="2x"/>
               </span>
             </Link>
           </li>
-          <li>
+          <li className= "sideIcon">
             <Link to = "/portfolio">
               <span class="icon">
                 <FontAwesomeIcon icon = "sitemap" size="2x"/>
               </span>
             </Link>
           </li>
-          <li>
+          <li className= "sideIcon">
             <Link to = "/contact">
               <span className="icon">
                 <FontAwesomeIcon icon = "envelope" size="2x"/>

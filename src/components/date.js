@@ -54,7 +54,7 @@ class TimeContainer extends Component {
     ]
     return (
       <div id="time-date-card" className='card'> 
-      <div className='card-contnet'>      
+      <div className='card-content'>      
       <div className='content'>
       <p id="time-style" className='title has-text-white'> {this.state.time}</p>
       <p id="day-month-style" className='subtitle has-text-white'>{days[this.state.day]},{" "}
@@ -62,6 +62,7 @@ class TimeContainer extends Component {
       </div>
       </div>         
       </div>
+      
     )
   }
 }
