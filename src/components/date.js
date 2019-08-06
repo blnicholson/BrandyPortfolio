@@ -53,14 +53,16 @@ class TimeContainer extends Component {
       'Saturday',
     ]
     return (
-      <div id="time-date-card" className='card'> 
-      <div className='card-content'>      
-      <div className='content'>
-      <p id="time-style" className='title has-text-white'> {this.state.time}</p>
-      <p id="day-month-style" className='subtitle has-text-white'>{days[this.state.day]},{" "}
-      {months[this.state.month]} {this.state.date}</p>
-      </div>
-      </div>         
+      <div className = "card" id = "timeCard">
+        <div className = "card-content">
+          <div className = "content">
+            <div className = "content">
+            <p id="dateStyle" className='subtitle has-text-white has-text-centered is-size-4 is-size-6-mobile is-size-6-tablet'>{days[this.state.day]},{" "}
+            {months[this.state.month]} {this.state.date}</p>
+            <p id="time-style" className='title has-text-white is-size-4 has-text-centered is-size-5-tablet'> {this.state.time}</p>
+            </div>
+          </div>
+        </div>
       </div>
       
     )

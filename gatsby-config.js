@@ -1,7 +1,15 @@
+// var id = [ "0", "e06cad6496bf46e0b1809eba32089eb3", "4e19a8a109a24385b7c0c51faabc46f9","6e1dd27675924918bdd733b1194bbb94", "559de49bb9f24680825ae6b59839e60c"]
+// var url =[];
 
-
+// for(i=1; i<6; i++){
+//    url = "https://listen-api.listennotes.com/api/v2/podcasts/" + id[i]
+//    console.log("butt" + id.length)
+//   }
+     
 module.exports = {
+
   siteMetadata: {
+
     title: 'Brandy Nicholson',
   },
   plugins: [
@@ -37,20 +45,27 @@ module.exports = {
     {
       resolve: "gatsby-source-apiserver",
       options: {
-        url: "https://listen-api.listennotes.com/api/v2/podcasts/0087e50929614250aac999207c1d33aa",
+        url: "https://listen-api.listennotes.com/api/v2/podcasts/4e19a8a109a24385b7c0c51faabc46f9?next_episode_pub_date=1479154463000&sort=recent_first",
         method:"get",
         headers:{
           "X-ListenAPI-Key": "a4539543e2ec4e228042992bb87f0f1d"
         },
-          name: "podcasts",
-      },
-  },
+          name: "BigWeb",
+      }
+    },
+
+
+
+
+
+
+
   {
     resolve: `gatsby-source-youtube-v2`,
     options: {
       channelId: [ 'UCW5YeuERMmlnqo4oq8vwUpg'],
       apiKey: 'AIzaSyBwF32cih-lu4GxejN2pd7lBgqcG2aF3rU',
-      maxVideos: 50 // Defaults to 50
+      maxVideos: 50// Defaults to 50
     },
   },
   

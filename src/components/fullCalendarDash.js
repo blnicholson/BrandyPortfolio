@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import {Calendar, momentLocalizer} from "react-big-calendar";
 import moment from "moment";
+import "./fullCalendarDash.css"
 
 import "react-big-calendar/lib/css/react-big-calendar.css";
 
@@ -11,9 +12,9 @@ class BigCalendar extends Component {
   state = {
     events: [
       {
-        start: new Date(),
-        end: new Date(moment().add(1, "days")),
-        title: "Some title"
+        start: "",
+        end: "",
+        title: ""
       }
     ]
   };

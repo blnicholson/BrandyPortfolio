@@ -1,217 +1,203 @@
-import React from 'react';
-import { Link, StaticQuery, graphql } from 'gatsby';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React, {Component} from 'react';
 import Date from "./date";
-import Player from './youtube.js';
-import WeatherDash from "./weatherDash";
 import Calendar from "./fullCalendarDash";
-import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext, ButtonFirst, ButtonLast } from 'pure-react-carousel';
+import LeftNav from "./leftNavDash"
+import Podcasts from "./podcasts"
+// import PodcastCard from "./podcastCard"
+import WeatherDash from "./weatherDash";
+import Youtube from "./youtubeLayout";
 import 'pure-react-carousel/dist/react-carousel.es.css';
-
 import './dashboard.css';
+import podcasts from "../myPodcastList.json";
+import Podcast0 from "../components/myPods/bigWeb2";
+import Podcast1 from "../components/test2";
+import { throws } from 'assert';
 
 
+class DashboardLayout extends Component {
+   state = {
+    isDashboardShowing: true,
+    isPodcast0Showing: false,
+    isPodcast1Showing: false,
+    isPodcast2Showing: false,
+    isPodcast3Showing: false,
+    isPodcast4Showing: false,
+    isPodcast5Showing: false,
+    isPodcast6Showing: false,
+    isPodcast7Showing: false,
+    isPodcast8Showing: false,
+    isPodcast9Showing: false,
+    isPodcast10Showing: false,
+    isPodcast11Showing: false,
+    isPodcast12Showing: false,
+    isPodcast13Showing: false,
+    isPodcast14Showing: false,
+    isPodcast15Showing: false,
+   }
 
-
-const DashboardLayout = () => (
-  
-  <StaticQuery
-    query={graphql`
-      query YouTubeQuery {
-        allYoutubeVideo{
-          edges {
-            node {
-              id
-              title
-              description
-              videoId
-              channelTitle
-              thumbnail {
-                url
-                width
-                height
-              }
-              localThumbnail {
-                id
-              }
-            }
-          }
+   playPodcast =(id) =>{
+        if(id === "0"){
+          {this.setState({isDashboardShowing:false, isPodcast0Showing:true})}
+        }
+        else if (id === "1"){
+          {this.setState({isDashboardShowing:false, isPodcast1Showing:true})}
+        }
+        else if (id === "2"){
+          {this.setState({isDashboardShowing:false, isPodcast2Showing:true})}
+        }
+        else if (id === "3"){
+          {this.setState({isDashboardShowing:false, isPodcast3Showing:true})}
+        }
+        else if (id === "4"){
+          {this.setState({isDashboardShowing:false, isPodcast4Showing:true})}
+        }
+        else if (id === "5"){
+          {this.setState({isDashboardShowing:false, isPodcast5Showing:true})}
+        }
+        else if (id === "6"){
+          {this.setState({isDashboardShowing:false, isPodcast6Showing:true})}
+        }
+        else if (id === "7"){
+          {this.setState({isDashboardShowing:false, isPodcast7Showing:true})}
+        }
+        else if (id === "8"){
+          {this.setState({isDashboardShowing:false, isPodcast8Showing:true})}
+        }
+        else if (id === "9"){
+          {this.setState({isDashboardShowing:false, isPodcast9Showing:true})}
+        }
+        else if (id === "10"){
+          {this.setState({isDashboardShowing:false, isPodcast10Showing:true})}
+        }
+        else if (id === "11"){
+          {this.setState({isDashboardShowing:false, isPodcast11Showing:true})}
+        }
+        else if (id === "12"){
+          {this.setState({isDashboardShowing:false, isPodcast12Showing:true})}
+        }
+        else if (id === "13"){
+          {this.setState({isDashboardShowing:false, isPodcast13Showing:true})}
+        }
+        else if (id === "14"){
+          {this.setState({isDashboardShowing:false, isPodcast14Showing:true})}
+        }
+        else if (id === "15"){
+          {this.setState({isDashboardShowing:false, isPodcast15Showing:true})}
         }
       }
-    
-    `}
-    render={data => (
-      <div className="hero is-large">
-    <div id="dashboard-card" className="card">
-      <div className="columns">
-        {/*Left Menu */}
-        <div className="column is-narrow is-narrow-mobile is-hidden-mobile">
-          <aside id="left-menu" className="menu">
-            <ul className="menu-list">
-              <Link to="/news">
-                <li>
-                  <span className="icon is-small">
-                    <FontAwesomeIcon
-                      icon={'newspaper'}
-                      size={'lg'}
-                      color={'white'}
-                    />
-                  </span>
-                </li>
-              </Link>
-              <Link to="/podcasts">
-                <li>
-                  <span className="icon is-small">
-                    <FontAwesomeIcon
-                      icon={'podcast'}
-                      size={'lg'}
-                      color={'white'}
-                    />
-                  </span>
-                </li>
-              </Link>
-              <Link to="/youtube">
-                <li>
-                  <span className="icon is-small">
-                    <FontAwesomeIcon
-                      icon={'video'}
-                      size={'lg'}
-                      color={'white'}
-                    />
-                  </span>
-                </li>
-              </Link>
-              <Link to="/weather">
-                <li>
-                  <span className="icon is-small">
-                    <FontAwesomeIcon
-                      icon={'cloud-sun-rain'}
-                      size={'lg'}
-                      color={'white'}
-                    />
-                  </span>
-                </li>
-              </Link>
-              <Link to="/calendar">
-                <li>
-                  <span className="icon is-small">
-                    <FontAwesomeIcon
-                      icon={'calendar-alt'}
-                      size={'lg'}
-                      color={'white'}
-                    />
-                  </span>
-                </li>
-              </Link>
-            </ul>
-          </aside>
-        </div>
 
-        <div id="information-side" className="column is-9">
-          {/*WakaTime Top Column */}
+      closePlayer=(id) => {
+        {this.setState({
+          isDashboardShowing:true,
+          isPodcast0Showing:false
+        })}
+      }
+
+    render() {
+        return (
+          <div className="hero is-large is-flex-mobile is-flex-tablet" id="dashHero">
+          <div className = "card" id="dashboard-card">
           <div className="columns">
-            <div className="column">
-              <div className="card" id="wakaTimeCard">
-                WakaTime
-              </div>
+            {/*Left Menu */}
+            <div className="column is-narrow is-narrow-mobile is-hidden-mobile">
+              <LeftNav/>
             </div>
-          </div>
-
-          {/*YouTube & Podcast Column */}
-          <div className="columns">
-            <div className="column">
+    
+            <div id="information-side" className="column is-9">
+              {/*WakaTime Top Column */}
               <div className="columns">
                 <div className="column">
-                <CarouselProvider
-                naturalSlideWidth={100}
-                naturalSlideHeight={50}
-                totalSlides={150}
-              >
-                <Slider>
-                {data.allYoutubeVideo.edges.map(
-                  (edge) => (
-                  <Slide index={0}>
-                      <Player 
-                            
-                            videoId={edge.node.videoId}
-                            />
-                            
-                            
-                            </Slide>
-                            )
-                            )}
-                  
-                </Slider>
-                <ButtonBack>Last Video</ButtonBack>
-                <ButtonNext>Next Video</ButtonNext>
-              </CarouselProvider>
+                  <div className="card" id="wakaTimeCard">
+                    WakaTime
+                  </div>
+                </div>
+              </div>
+    
+              {/*YouTube & Podcast Column */}
+              <div className="columns">
+                <div className="column">
+                  <div className="columns">
+                    <div className="column">
+                    
+                    <Youtube/>
+                    </div>
+                  </div>
+                  <div className = "column">
+                  <div className="columns">
+                    <div className="column">
+                    {this.state.isDashboardShowing &&
+                        <Podcasts
+                        playPodcast={this.playPodcast}
+                       />
+                    }
+                    {this.state.isPodcast0Showing &&
+                      <Podcast0
+                        closePlayer={this.closePlayer}
+                      />
+                    }
+                    {this.state.isPodcast1Showing &&
+                      <Podcast1/>
+                    }
+                    </div>
+                  </div>
+                </div>
                 
+    </div>
+                {/* Calendar Column */}
+                <div id="calendar-column" className="column">
+                  <div id="calendar-card">
+                      <Calendar/>
+                    </div>
+                  </div>
+                </div>
+            </div>
+    
+            {/*Far Right Column */}
+            <div id="farRight" className="column">
+              <div className="columns">
+                <div className="column">
+                  <div className="card" id="dateCard">
+                   <Date/>
+                  </div>
+                </div>
+              </div>
+              <div className="columns">
+                <div className="column" />
+              </div>
+              <div className="columns">
+                <div className="column">
+                  <div className="card" id="weatherCard">
+                    <WeatherDash/>
+                  </div>
                 </div>
               </div>
               <div className="columns">
                 <div className="column">
-                  <div className="card" id="api2Card">
-                    API2
+                  <div id="data-card" className="card">
+                    Data Here
                   </div>
                 </div>
               </div>
             </div>
-
-            {/* Calendar Column */}
-            <div id="calendar-column" className="column">
-              <div id="calendar-card">
-                <div className="card" id="calendarCard">
-                  
-                      </div>
+          </div>
+    
+          {/*News Ticker Column */}
+          <div className="columns">
+            <div className="column is-12">
+              <div id="news-ticker-card" className="card">
+                <div className="card" id="tickerCard">
+                
                 </div>
               </div>
             </div>
-        </div>
-
-        {/*Far Right Column */}
-        <div id="farRight" className="column">
-          <div className="columns">
-            <div className="column">
-              <div className="card" id="dateCard">
-               <Date/>
-              </div>
-            </div>
           </div>
-          <div className="columns">
-            <div className="column" />
-          </div>
-          <div className="columns">
-            <div className="column">
-              <div className="card" id="weatherCard">
-                
-              </div>
-            </div>
-          </div>
-          <div className="columns">
-            <div className="column">
-              <div id="data-card" className="card">
-                Data Here
-              </div>
-            </div>
-          </div>
-        </div>
+        
       </div>
+      </div> 
+        )
+    }
+}
+export default DashboardLayout;
 
-      {/*News Ticker Column */}
-      <div className="columns">
-        <div className="column is-12">
-          <div id="news-ticker-card" className="card">
-            <div className="card" id="tickerCard">
-              Ticker
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-    )}
-  />
-)
 
-export default DashboardLayout

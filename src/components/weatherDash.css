@@ -1,10 +1,14 @@
 #weather-main-card{
-    background-color: #192f58;
+    background-image:url("../images/background-bright-clouds-1235398\ \(1\).jpg");
+    background-position: center;
+    background-size:cover;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377), 0 6px 20px 0 rgba(0, 0, 0, 0.377);
-    height: 58vh;
+    height: 52vh;
+    
     
 }
 
 .description{
     padding-left:15px;
 }
+
