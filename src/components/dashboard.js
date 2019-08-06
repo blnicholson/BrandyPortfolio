@@ -8,10 +8,7 @@ import WeatherDash from "./weatherDash";
 import Youtube from "./youtubeLayout";
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import './dashboard.css';
-import podcasts from "../myPodcastList.json";
-import Podcast0 from "../components/myPods/bigWeb2";
-import Podcast1 from "../components/test2";
-import { throws } from 'assert';
+import Podcast0 from "./myPods/bigweb2";
 
 
 class DashboardLayout extends Component {
@@ -135,9 +132,7 @@ class DashboardLayout extends Component {
                         closePlayer={this.closePlayer}
                       />
                     }
-                    {this.state.isPodcast1Showing &&
-                      <Podcast1/>
-                    }
+                    
                     </div>
                   </div>
                 </div>
