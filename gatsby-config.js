@@ -1,7 +1,10 @@
 const moment = require('moment') 
 const startDate = moment().subtract(14, 'days').format('YYYY-MM-DD')
 const endDate = moment().subtract(7, 'days').format('YYYY-MM-DD')
-     
+require('dotenv').config();
+
+const OWApi = process.env.OPEN_WEATHER_API_KEY; 
+console.log(OWApi)
 module.exports = {
 
   siteMetadata: {
@@ -74,7 +77,7 @@ module.exports = {
   {
     resolve: `gatsby-source-openweathermap`,
     options: {
-      apikey: 'c0d2380d8f5bf41da5f7c4ab854ee475',
+      apikey: OWApi,
       location: 'Frisco',
       units: 'imperial',
       type: 'forecast'

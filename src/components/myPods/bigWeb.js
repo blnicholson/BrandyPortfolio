@@ -92,7 +92,7 @@ const BigWeb = (props) => (
         totalSlides={10}
       >
         <Slider>
-          {data.allBigWeb.nodes[1].episodes.map(episode => (
+          {data.allBigWeb.nodes[0].episodes.map(episode => (
             <Slide index={1}>
             <PodcastPlayer
               title={episode.title}

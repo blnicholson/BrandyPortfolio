@@ -9,13 +9,13 @@ import WeatherDash from "./weatherDash";
 import Youtube from "./youtubeLayout";
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import './dashboard.css';
-import BigWeb from "./myPods/bigWeb";
+import BigWeb from "./myPods/bigWeb"
 
 
 class DashboardLayout extends Component {
    state = {
     isDashboardShowing: true,
-    isBigWeb: false,
+    isBigWebShowing: false,
     isPodcast1Showing: false,
     isPodcast2Showing: false,
     isPodcast3Showing: false,
@@ -37,8 +37,7 @@ class DashboardLayout extends Component {
      switch (id) {
        case "0":
          {this.setState({isDashboardShowing:false, isBigWebShowing:true})}
-        case "1":
-          {this.setState({isDashboardShowing:false, isPodcast1Showing:true})}
+        
      }
         
       }
@@ -46,7 +45,7 @@ class DashboardLayout extends Component {
       closePlayer=(id) => {
         {this.setState({
           isDashboardShowing:true,
-          isPodcast0Showing:false
+          isBigWebShowing:false
         })}
       }
 
@@ -76,7 +75,7 @@ class DashboardLayout extends Component {
                       playPodcast={this.playPodcast}
                      />
                   }
-                  {this.state.isPodcast0Showing &&
+                  {this.state.isBigWebShowing &&
                     <BigWeb
                       closePlayer={this.closePlayer}
                     />
