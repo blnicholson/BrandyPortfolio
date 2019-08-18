@@ -9,7 +9,7 @@ import WeatherDash from "./weatherDash";
 import Youtube from "./youtubeLayout";
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import './dashboard.css';
-import BigWeb from "./myPods/bigweb";
+import BigWeb from "./myPods/bigWeb";
 
 
 class DashboardLayout extends Component {
