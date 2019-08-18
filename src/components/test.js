@@ -10,8 +10,10 @@ class Test extends React.Component {
       
 
       return (
-        <div>
-          <p>This will be a player here</p>
+        <div className = "card">
+          <div className = "card-header">
+            <Date/>
+          </div>
         </div>
       );
     }

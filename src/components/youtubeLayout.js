@@ -3,7 +3,7 @@ import {  StaticQuery, graphql } from 'gatsby';
 import Player from './youtube.js';
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext, ButtonFirst, ButtonLast } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
-import './dashboard.css';
+import './youtubeLayout.css';
 
 
 
@@ -39,9 +39,7 @@ const YoutubeLayout = () => (
     render={data => (
         
 
-          <div className = "youtubePlayer">
-          
-          
+          <div className = "card" id="youtubeCard">
           <CarouselProvider
           naturalSlideWidth={100}
           naturalSlideHeight={50}
@@ -71,7 +69,6 @@ const YoutubeLayout = () => (
             
 
         
-
       
     
     )}

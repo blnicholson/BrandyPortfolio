@@ -3,12 +3,18 @@
     background-position: center;
     background-size:cover;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377), 0 6px 20px 0 rgba(0, 0, 0, 0.377);
-    height: 52vh;
-    
-    
+    height: 73vh; 
 }
 
 .description{
     padding-left:15px;
+}
+.location{
+    margin-top:-25px;
+    padding-bottom:45px;
+}
+
+.weatherIcon{
+    padding-bottom:35px;
 }
 

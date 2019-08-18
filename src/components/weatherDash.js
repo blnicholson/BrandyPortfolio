@@ -1,6 +1,6 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby';
-// import Moment from 'moment'
+import Date from "./date.js"
 import '../scss/open-weather-icons.scss';
 import './weatherDash.css';
 
@@ -57,12 +57,15 @@ const WeatherDash = () => (
     render={data => (
       <div id = "weather-main-card" className = "card has-text-white">
         <div className = "card-header-title is-centered is-size-2 has-text-white">
-        <p>{data.openWeather.city.name}</p>
+          <Date />
         </div>
-        
-        
+       
+
         <div className = "card-content">
           <div className = "content">
+          <div className = "location has-text-centered">
+          <p className="is-size-2">{data.openWeather.city.name}</p>
+          </div>
           <div className ="weatherIcon has-text-centered">
           <span className="icon is-large is-size-4">
                 <i
@@ -87,7 +90,6 @@ const WeatherDash = () => (
             <p>{data.openWeather.list[0].weather[0].description}</p>
           </div>
           <div className = "title weatherDescription has-text-white is-capitalized has-text-centered is-size-5">
-            <p>{data.openWeather.list[0].dt_txt}</p>
           </div>
           </div>
         </div>

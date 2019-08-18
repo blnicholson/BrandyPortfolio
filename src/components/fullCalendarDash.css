@@ -1,8 +1,8 @@
 #calendar-card{
-    background-color:rgba(112, 128, 144, 0.913);    
+    background-color: rgba(144, 151, 159, 0.913);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377), 0 6px 20px 0 rgba(0, 0, 0, 0.377);
     
-    height: 44.5vh;
+    height: 26vh;
 }
 .rbc-off-range-bg{
     background:transparent !important;

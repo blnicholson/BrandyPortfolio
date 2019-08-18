@@ -3,19 +3,18 @@ import Date from "./date";
 import Calendar from "./fullCalendarDash";
 import LeftNav from "./leftNavDash"
 import Podcasts from "./podcasts"
-import PodcastCard from "./podcastCard"
 import WakaWebPart from "./wakatime"
 import WeatherDash from "./weatherDash";
 import Youtube from "./youtubeLayout";
 import 'pure-react-carousel/dist/react-carousel.es.css';
 import './dashboard.css';
-import BigWeb from "./myPods/bigweb";
+import Podcast0 from "./myPods/bigweb2";
 
 
 class DashboardLayout extends Component {
    state = {
     isDashboardShowing: true,
-    isBigWeb: false,
+    isPodcast0Showing: false,
     isPodcast1Showing: false,
     isPodcast2Showing: false,
     isPodcast3Showing: false,
@@ -36,9 +35,7 @@ class DashboardLayout extends Component {
    playPodcast =(id) =>{
      switch (id) {
        case "0":
-         {this.setState({isDashboardShowing:false, isBigWebShowing:true})}
-        case "1":
-          {this.setState({isDashboardShowing:false, isPodcast1Showing:true})}
+         {this.setState({isDashboardShowing:false, isPodcast0Showing:true})}
      }
         
       }
@@ -59,38 +56,54 @@ class DashboardLayout extends Component {
               <LeftNav/>
             </div>
             
+            <div id="farRight" className="column">
+              <div className="columns">
+                <div className="column">
+                <div className="card" id="dateCard">
+                <Date/>
+                </div>
+                </div>
+              </div>
+              <div className="columns">
+                <div className="column">
+                  <div className="card" id="weatherCard">
+                    <WeatherDash/>
+                  </div>  
+                </div>
+              </div>
+            </div>
+
             <div id="information-side" className="column is-9">
             <div className="columns">
                 <div className="column">
                   <div className="columns">
-                  <div id="calendar-column" className="column">
-                  <div id="calendar-card">
-                    <Calendar/>
+                    <div className="column">
+                    <Youtube/>
+                    </div>
                   </div>
                 </div>
                 <div className="column">
                   <div className="columns">
                   <div className="column">
                   {this.state.isDashboardShowing &&
-                      <PodcastCard
+                      <Podcasts
                       playPodcast={this.playPodcast}
                      />
                   }
                   {this.state.isPodcast0Showing &&
-                    <BigWeb
+                    <Podcast0
                       closePlayer={this.closePlayer}
                     />
                   }
                   </div>
                   </div>
                 </div>
-                    <div className="column">
-                      <Youtube/>
-                    </div>
+                <div id="calendar-column" className="column">
+                  <div id="calendar-card">
+                    <Calendar/>
                   </div>
                 </div>
               </div>
-
               <div className="columns">
                 <div className="column">
                   <WakaWebPart/>
@@ -103,27 +116,14 @@ class DashboardLayout extends Component {
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div id="farRight" className="column">
-              <div className="columns">
-                <div className="column">
-                  <div className="card" id="weatherCard">
-                    <WeatherDash/>
-                  </div>  
-                </div>
-              </div>
+              
             </div>
           </div>
-
-          
-        </div>
-        <div className="card newsCard">
-        <div className="columns">
+          <div className="columns">
             <div className="column">
               News
             </div>
-        </div>
+          </div>
         </div>
       </div> 
         )

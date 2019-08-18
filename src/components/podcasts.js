@@ -11,7 +11,7 @@ class Podcasts extends Component {
     this.state = {
       channels: PodcastList,
       currentPage: 1,
-      channelsPerPage: 4
+      channelsPerPage: 8
     };
 
     this.handleClick = this.handleClick.bind(this);
@@ -66,7 +66,7 @@ class Podcasts extends Component {
 
       return (
         
-        <div id = "podcast-card" className = "card has-text-white">
+        <div id = "podcast-card" className = "has-text-white">
         <section>
           <div className="columns is-gapless is-multiline">
           {renderChannels}

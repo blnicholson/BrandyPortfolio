@@ -1,6 +1,7 @@
 
 #dashHero{
     height:90vh !important;
+    border-color:#50CFDE !important;
 }
 #dashboard-card{
     height:90vh;
@@ -18,4 +19,8 @@
 
 iframe{
     height:300px;
+}
+
+.newsCard{
+    margin-bottom:20px;
 }

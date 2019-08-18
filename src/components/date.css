@@ -1,8 +1,6 @@
 #timeCard{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.377), 0 6px 20px 0 rgba(0, 0, 0, 0.377);
-    height: 11vh;
-    padding-bottom:10px;
-    background:orange;
+    /* padding-bottom:10px; */
+    background:transparent;
 }
 
 @media only screen and (max-width: 1020px) {

@@ -1,10 +1,6 @@
-// var id = [ "0", "e06cad6496bf46e0b1809eba32089eb3", "4e19a8a109a24385b7c0c51faabc46f9","6e1dd27675924918bdd733b1194bbb94", "559de49bb9f24680825ae6b59839e60c"]
-// var url =[];
-
-// for(i=1; i<6; i++){
-//    url = "https://listen-api.listennotes.com/api/v2/podcasts/" + id[i]
-//    console.log("butt" + id.length)
-//   }
+const moment = require('moment') 
+const startDate = moment().subtract(14, 'days').format('YYYY-MM-DD')
+const endDate = moment().subtract(7, 'days').format('YYYY-MM-DD')
      
 module.exports = {
 
@@ -55,11 +51,17 @@ module.exports = {
     },
 
 
-
-
-
-
-
+    {
+      resolve: 'gatsby-source-thirdparty',
+      options: {
+        // The url, this should be the endpoint you are attempting to pull data from
+        url: `https://wakatime.com/api/v1/users/current/stats/last_7_days?api_key=6ae76703-d7e3-4535-b4eb-2372e2b61fc6`,
+  
+        // Name of the data to be downloaded.  Will show in graphQL or be saved to a file
+        // using this name. i.e. posts.json
+        name: `wakatime`,
+      }
+    },
   {
     resolve: `gatsby-source-youtube-v2`,
     options: {

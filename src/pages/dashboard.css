@@ -4,5 +4,7 @@
     right:0;
     bottom:0;
     left:0;
-    background-color:orange;
+    background-image:url("../images/black-and-white-composition-conceptual-934071.jpg");
+    background-size:contain;
+    background-repeat: no-repeat;
 }

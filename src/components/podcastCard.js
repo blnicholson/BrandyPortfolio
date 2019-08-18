@@ -2,9 +2,11 @@ import React from 'react'
 import Podcasts from '../components/podcasts'
 import './podcastCard.css'
 
-const PodcastCard = () => (
-  <div id="podcast-card" className="card has-text-white">
-    <Podcasts/>
+const PodcastCard = (props) => (
+  <div id="podcast-cards" className="card has-text-white">
+    <Podcasts
+     playPodcast={props.playPodcast}
+    />
   </div>
 )
 
