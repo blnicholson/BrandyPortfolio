@@ -4,7 +4,7 @@ import Calendar from "./fullCalendarDash";
 import LeftNav from "./leftNavDash"
 import Podcasts from "./podcasts"
 import PodcastCard from "./podcastCard"
-import WakaWebPart from "./wakatime"
+import WakaWebPart from "./wakaTime"
 import WeatherDash from "./weatherDash";
 import Youtube from "./youtubeLayout";
 import 'pure-react-carousel/dist/react-carousel.es.css';
