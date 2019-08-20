@@ -88,7 +88,7 @@ module.exports = {
   {
     resolve:`gatsby-source-filesystem`,
     options:{
-      path:`./src/pods/`
+      path:`./public/pods/myPodcastList.json`
     },
   },
 
