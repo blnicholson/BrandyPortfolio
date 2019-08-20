@@ -2,97 +2,97 @@
     {
         "id": "0",
         "name": "The Big Web Show",
-        "image": "../images/podcast/big_web_show_logo_100px.png",
+        "image": "./big_web_show_logo_100px.png",
         "alt": "The Big Web Show Logo"
     },
     {
         "id": "1",
         "name": "The Changelog",
-        "image": "../images/podcast/changelog_logo_100px.png",
+        "image": "./changelog_logo_100px.png",
         "alt": "The Changelog Logo"
     },
     {
         "id": "2",
         "name": "CNTRL+Click Cast",
-        "image": "../images/podcast/cntrl_click_cast_logo_100px.png",
+        "image": "./cntrl_click_cast_logo_100px.png",
         "alt": "CNTRL + Click Cast Logo"
     },
     {
         "id": "3",
         "name": "CodeNewbie Radio",
-        "image": "../images/podcast/code_newbie_logo_100px.png",
+        "image": "./code_newbie_logo_100px.png",
         "alt": "CodeNewbie Radio Logo"
     },
     {
         "id": "4",
         "name": "CodePen Radio",
-        "image": "../images/podcast/code_pen_radio_logo_100px.png",
+        "image": "./code_pen_radio_logo_100px.png",
         "alt": "CodePen Radio Logo"
     },
     {
         "id": "5",
         "name": "Developer Tea",
-        "image": "../images/podcast/developer_tea_logo_100px.png",
+        "image": "./developer_tea_logo_100px.png",
         "alt": "Developer Tea Logo"
     },
     {
         "id": "6",
         "name": "Front End Happy Hour",
-        "image": "../images/podcast/front_end_happy_hour_logo_100px.png",
+        "image": "./front_end_happy_hour_logo_100px.png",
         "alt": "Front End Happy Hour Logo"
     },
     {
         "id": "7",
         "name": "Full Stack Radio",
-        "image": "../images/podcast/full_stack_radio_logo_100px.png",
+        "image": "./full_stack_radio_logo_100px.png",
         "alt": "Full Stack Radio Logo"
     },
     {
         "id": "8",
         "name": "Hanselminutes",
-        "image": "../images/podcast/hanselminutes_logo_100px.png",
+        "image": "./hanselminutes_logo_100px.png",
         "alt": "Hanselminutes Logo"
     },
     {
         "id": "9",
         "name": "JavaScript Jabber",
-        "image": "../images/podcast/javascript_jabber_logo_100px.png",
+        "image": "./javascript_jabber_logo_100px.png",
         "alt": "JavaScript Jabber Logo"
     },
     {
         "id": "10",
         "name": "Let's Make Mistakes",
-        "image": "../images/podcast/lets_make_mistakes_logo_100px.png",
+        "image": "./lets_make_mistakes_logo_100px.png",
         "alt": "Let's Make Mistakes Logo"
     },
     {
         "id": "11",
         "name": "Responsive Web Design",
-        "image": "../images/podcast/responsive_web_design_logo_100px.png",
+        "image": "./responsive_web_design_logo_100px.png",
         "alt": "Responsive Web Design Logo"
     },
     {
         "id": "12",
         "name": "Shop Talk",
-        "image": "../images/podcast/shop_talk_logo_100px.png",
+        "image": "./shop_talk_logo_100px.png",
         "alt": "Shop Talk Logo"
     },
     {
         "id": "13",
         "name": "Start Here Web Development",
-        "image": "../images/podcast/start_here_web_dev_logo_100px.png",
+        "image": "./start_here_web_dev_logo_100px.png",
         "alt": "Start Here Web Development Logo"
     },
     {
         "id": "14",
         "name": "Style Guide",
-        "image": "../images/podcast/style_guide_logo_100px.png",
+        "image": "./style_guide_logo_100px.png",
         "alt": "Style Guide Logo"
     },
     {
         "id": "15",
         "name": "Non Breaking Space",
-        "image": "../images/podcast/non_breaking_space_logo_100px.png",
+        "image": "./non_breaking_space_logo_100px.png",
         "alt": "Syntax Logo"
     }
 ]

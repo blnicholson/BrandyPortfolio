@@ -84,9 +84,21 @@ module.exports = {
     },
   },
 
-  
-    
+  `gatsby-transformer-json`,
+  {
+    resolve:`gatsby-source-filesystem`,
+    options:{
+      path:`./src/pods/`
+    },
+  },
 
+  // {
+  // resolve: `gatsby-source-filesystem`,
+  //     options: {
+  //       path: `${__dirname}/src/pods/`,
+  //       name: 'pods',
+  //     },
+  // },
     'gatsby-plugin-sass',
     'gatsby-plugin-offline',
     

@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import "./about.css";
 import { Link } from 'gatsby'
 import Layout from '../components/layout'
-import Pagination from "../components/pagination"
+import Pagination from "../components/test.js"
 
 class AboutUsPage extends Component {
   

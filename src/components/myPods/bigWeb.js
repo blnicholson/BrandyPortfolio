@@ -39,7 +39,7 @@ const BigWeb = (props) => (
       <div id="podcastPlayerCard" className="card has-text-white equal-height">
         <header className="card-header">
           <p className="card-header-title has-text-white">
-            {data.allBigWeb.nodes[1].title}
+            {data.allBigWeb.nodes[0].title}
           </p>
           <span className="card-header-icon" aria-label="more options">
             <span className="icon">
@@ -59,7 +59,7 @@ const BigWeb = (props) => (
             totalSlides={10}
           >
             <Slider>
-              {data.allBigWeb.nodes[1].episodes.map(episode => (
+              {data.allBigWeb.nodes[0].episodes.map(episode => (
                 <Slide index={1}>
                   <PodcastPlayer
                     title={episode.title}
@@ -121,4 +121,4 @@ const BigWeb = (props) => (
 )
 
 
-export default BigWeb
+export default BigWeb;

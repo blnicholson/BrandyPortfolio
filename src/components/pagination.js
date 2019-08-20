@@ -1,42 +1,53 @@
-import React from 'react'
-import './pagination.css'
-import Pods from "../test.json"
+import React, { Component } from 'react'
+import PodcastItem from '../components/podcastItem'
+import PodcastList from "../pods/myPodcastList.json"
+import './podcasts.css'
 
-class TodoApp extends React.Component {
-    constructor() {
-      super();
-      this.state = {
-        todos: Pods,
-        currentPage: 1,
-        todosPerPage: 8
-      };
-      this.handleClick = this.handleClick.bind(this);
-      console.log(Pods)
-    }
+/* https://codepen.io/PiotrBerebecki/pen/pEYPbY */
 
-    handleClick(event) {
-      this.setState({
-        currentPage: Number(event.target.id),
-      });
-    }
+class Podcasts extends Component {
+  constructor() {
+    super();
+    this.state = {
+      channels: PodcastList,
+      currentPage: 1,
+      channelsPerPage: 8
+    };
 
-    render() {
-      const { todos, currentPage, todosPerPage } = this.state;
+    this.handleClick = this.handleClick.bind(this);
+    console.log(PodcastList)
+    console.log(PodcastList[0].id)
+  }
+
+  handleClick(event) {
+    this.setState({
+      currentPage: Number(event.target.id),
+    });
+  }
+
+
+  render() {
+
+      const { channels, currentPage, channelsPerPage } = this.state;
 
       // Logic for displaying current todos
-      const indexOfLastTodo = currentPage * todosPerPage;
-      const indexOfFirstTodo = indexOfLastTodo - todosPerPage;
-      const currentTodos = todos.slice(indexOfFirstTodo, indexOfLastTodo);
+      const indexOfLastChannel = currentPage * channelsPerPage;
+      const indexOfFirstChannel = indexOfLastChannel - channelsPerPage;
+      const currentChannels = channels.slice(indexOfFirstChannel, indexOfLastChannel);
 
-      const renderTodos = currentTodos.map((todo, index) => {
-        return <li key={index}>{todo.name} <br/>
-                <img src = {todo.image} alt = {todo.alt}/>
-        </li>;
+      const renderChannels = currentChannels.map((channel, index) => {
+        return <PodcastItem
+        playPodcast = {this.props.playPodcast}
+        id={channel.id}
+        key={channel.id}
+        name={channel.name}
+        image={channel.image}
+      />
       });
 
       // Logic for displaying page numbers
       const pageNumbers = [];
-      for (let i = 1; i <= Math.ceil(todos.length / todosPerPage); i++) {
+      for (let i = 1; i <= Math.ceil(channels.length / channelsPerPage); i++) {
         pageNumbers.push(i);
       }
 
@@ -52,28 +63,21 @@ class TodoApp extends React.Component {
         );
       });
 
+
       return (
-        <div>
-          <ul>
-            {renderTodos}
-          </ul>
-          <ul id="page-numbers">
-            {renderPageNumbers}
-          </ul>
-        </div>
+        
+        <div id = "podcast-card" className = "has-text-white">
+        <section>
+          <div className="columns is-gapless is-multiline">
+          {renderChannels}
+          </div>
+        </section>
+        <ul id="page-numbers">
+        {renderPageNumbers}
+      </ul>
+      </div>
       );
-    }
+
   }
-
-
-  
-
-
-
-
-
-
-
-
- 
-export default TodoApp
+}
+export default Podcasts
