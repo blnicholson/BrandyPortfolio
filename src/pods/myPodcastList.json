@@ -56,13 +56,13 @@
     {
         "id": "9",
         "name": "JavaScript Jabber",
-        "image": "./javascript_jabber_logo_100px.png",
+        "image": "/static/javascript_jabber_logo_100px-830926f9b2a6b7cd36f5dafafbca9ca3.png",
         "alt": "JavaScript Jabber Logo"
     },
     {
         "id": "10",
         "name": "Let's Make Mistakes",
-        "image": "./lets_make_mistakes_logo_100px.png",
+        "image": "/static/lets_make_mistakes_logo_100px-0dc3c5a7b60cc67a2d769cfcb0899f81.png",
         "alt": "Let's Make Mistakes Logo"
     },
     {
