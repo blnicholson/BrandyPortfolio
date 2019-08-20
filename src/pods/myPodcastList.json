@@ -68,31 +68,31 @@
     {
         "id": "11",
         "name": "Responsive Web Design",
-        "image": "./responsive_web_design_logo_100px.png",
+        "image": "/static/responsive_web_design_logo_100px-fc45344d041affd90a7f41f86af807cd.png",
         "alt": "Responsive Web Design Logo"
     },
     {
         "id": "12",
         "name": "Shop Talk",
-        "image": "./shop_talk_logo_100px.png",
+        "image": "/static/shop_talk_logo_100px-85f6cbca3ed83132ffd2ce0c5b6f5987.png",
         "alt": "Shop Talk Logo"
     },
     {
         "id": "13",
         "name": "Start Here Web Development",
-        "image": "./start_here_web_dev_logo_100px.png",
+        "image": "/static/start_here_web_dev_logo_100px-1f798c555c71619fdc7670885d5a5b87.png",
         "alt": "Start Here Web Development Logo"
     },
     {
         "id": "14",
         "name": "Style Guide",
-        "image": "./style_guide_logo_100px.png",
+        "image": "/static/style_guide_logo_100px-fb457be89c97dca92c4740812b6eecb6.png",
         "alt": "Style Guide Logo"
     },
     {
         "id": "15",
         "name": "Non Breaking Space",
-        "image": "./non_breaking_space_logo_100px.png",
+        "image": "/static/non_breaking_space_logo_100px-8ee9ec556810e460bb3ae3e4aa6b8364.png",
         "alt": "Syntax Logo"
     }
 ]
