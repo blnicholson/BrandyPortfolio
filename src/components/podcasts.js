@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PodcastItem from '../components/podcastItem'
-import PodcastList from "../../public/pods/myPodcastList.json"
+import PodcastList from "../pods/myPodcastList.json"
 import './podcasts.css'
 import { StaticQuery } from 'gatsby';
 
