@@ -2,55 +2,55 @@
     {
         "id": "0",
         "name": "The Big Web Show",
-        "image": "./big_web_show_logo_100px.png",
+        "image": "/static/big_web_show_logo_100px-11744ca4c973b0716eec37a0657e488c.png",
         "alt": "The Big Web Show Logo"
     },
     {
         "id": "1",
         "name": "The Changelog",
-        "image": "./changelog_logo_100px.png",
+        "image": "/static/changelog_logo_100px-35b5580c3f0c714e94f434df1138d3be.png",
         "alt": "The Changelog Logo"
     },
     {
         "id": "2",
         "name": "CNTRL+Click Cast",
-        "image": "./cntrl_click_cast_logo_100px.png",
+        "image": "/static/cntrl_click_cast_logo_100px-75a366cd9b97bc70ee17ade06c17b763.png",
         "alt": "CNTRL + Click Cast Logo"
     },
     {
         "id": "3",
         "name": "CodeNewbie Radio",
-        "image": "./code_newbie_logo_100px.png",
+        "image": "/static/code_newbie_logo_100px-a8ce06372bb348cd924118e804c0fdc4.png",
         "alt": "CodeNewbie Radio Logo"
     },
     {
         "id": "4",
         "name": "CodePen Radio",
-        "image": "./code_pen_radio_logo_100px.png",
+        "image": "/static/code_pen_radio_logo_100px-748956c43776906cec7e73968b25532b.png",
         "alt": "CodePen Radio Logo"
     },
     {
         "id": "5",
         "name": "Developer Tea",
-        "image": "./developer_tea_logo_100px.png",
+        "image": "/static/developer_tea_logo_100px-5f1985bcd1ac8a789e890b4fa7a028dc.png",
         "alt": "Developer Tea Logo"
     },
     {
         "id": "6",
         "name": "Front End Happy Hour",
-        "image": "./front_end_happy_hour_logo_100px.png",
+        "image": "/static/front_end_happy_hour_logo_100px-ee6e593d405faf7de06c6207927e80b2.png",
         "alt": "Front End Happy Hour Logo"
     },
     {
         "id": "7",
         "name": "Full Stack Radio",
-        "image": "./full_stack_radio_logo_100px.png",
+        "image": "/static/full_stack_radio_logo_100px-da05ba45a8a37be30d31ffdb797ec8f0.png",
         "alt": "Full Stack Radio Logo"
     },
     {
         "id": "8",
         "name": "Hanselminutes",
-        "image": "./hanselminutes_logo_100px.png",
+        "image": "/static/hanselminutes_logo_100px-e8cf6cc69754490381adbdad793ac1d4.png",
         "alt": "Hanselminutes Logo"
     },
     {

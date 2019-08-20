@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PodcastItem from '../components/podcastItem'
 import PodcastList from "../pods/myPodcastList.json"
 import './podcasts.css'
+import { StaticQuery } from 'gatsby';
 
 /* https://codepen.io/PiotrBerebecki/pen/pEYPbY */
 
@@ -26,7 +27,7 @@ class Podcasts extends Component {
   }
 
 
-  render() {
+  render(data) {
 
       const { channels, currentPage, channelsPerPage } = this.state;
 
@@ -81,3 +82,5 @@ class Podcasts extends Component {
   }
 }
 export default Podcasts
+
+  
