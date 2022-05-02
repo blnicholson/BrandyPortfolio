@@ -33,7 +33,7 @@
     "gatsby-source-youtube-v2": "^1.0.1",
     "gatsby-transformer-json": "^2.2.2",
     "less": "^3.9.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "open-weather-icons": "0.0.8",
     "pure-react-carousel": "^1.21.1",
     "randomcolor": "^0.5.4",
